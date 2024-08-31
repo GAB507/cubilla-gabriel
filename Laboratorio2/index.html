@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1</title>
+</head>
+<body>
+    <h2>¿Que es JavaScript y en que se asemeja a Java?</h2>
+    <br>
+    <p>
+        <strong>JavaScript</strong> es un lenguaje de programación de alto nivel, principalmente utilizado para crear y controlar el comportamiento de páginas web dinámicas en los navegadores. 
+        Permite a los desarrolladores añadir interactividad, como responder a eventos de usuario, actualizar el contenido de la página sin recargarla, y crear efectos visuales.
+        <br>
+        La similitud de JavaScript con Java es que ambos lenguajes deriban en parte de C, por lo que la estructura en su
+        sintaxis es muy similar, otra similitud es que ambos lenguajes soportan el paradigma POO.
+        Otras caracteristicas similares es que ambos son portables, solo que uno enfocado a la portabilidad web y el otro
+        portable al SO gracias a su maquina virtual.Por ultimo cabe resaltar que Java tambien soporta la web gracias a sus
+        applets o servlets.
+        <br>
+        
+    </p>
+    <script>
+
+/* 1. Problema N°1 operaciones basicas
+*/
+
+var primero  = 5;
+var segundo = 3;
+
+console.log(primero+segundo);
+console.log(primero-segundo);
+console.log(primero/segundo);
+console.log(primero*segundo);
+
+/*2. Problema N°2  Concatenacion de variables con let*/ 
+
+let word = "Programacion en ";
+let word2 = "Javascript";
+
+let concat = word+word2;
+
+console.log(concat);
+
+/*3. Problema N°3 imprimir tipos de datos con la palabra reservada 'const'*/ 
+
+const tipoDato = true;
+
+console.log(`el tipo de dato es: ${typeof tipoDato}`);
+
+
+/*4. Problema N°4  Creacion de Object*/ 
+
+let miObjeto = {
+    numero: 14,          // Number
+    texto: "Hola mundo", // String
+    booleano: true,      // Boolean
+    objetoVacio: {}      // Objeto vacío
+};
+ 
+/*5. Sama de los multiplos de 3 y 5 hasta N cantidad */
+
+function multiplosTresCinco(numero){
+     let value = 0;
+     let limite = Math.floor(numero/3);
+     let tp,tmp;
+
+     for (let index = 1; index <= limite; index++) {
+         tmp = (index*3 >= numero)?0:index*3;
+         tp = index*5;
+         tmp += (tp >= numero)?0:tp;
+         value+=tmp; 
+     } 
+    return value;
+}
+
+console.log(multiplosTresCinco(10));
+ 
+</script>
+</body>
+</html>
