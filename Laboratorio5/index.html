@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio4</title>
+</head>
+
+<style>
+body{
+   display: flex;
+   font-size: 1.5rem;
+   background-color: black;
+   color: white; 
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+</style>
+
+<body>
+
+<main>
+<fieldset>
+<form>
+<label for="name">Introduzca frase</label>
+<input type="text" name="name" id="cadena">
+<select name="color" >
+<option value="white">Blanco</option>
+<option value="blue">Azul</option>
+<option value="grey">Gris</option>
+</select>
+</form>
+</fieldset>
+<span id="response"></span>
+</main>
+
+<script src="./script.js"></script>
+</body>
+</html>
