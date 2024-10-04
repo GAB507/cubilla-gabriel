@@ -6,28 +6,66 @@
 
 html, body {
     height: 98%;
-    width: 98vw;
-    margin: 1% auto;
+    margin: 2px;
 }
 
 .container_main {
     height: 95%;
     background-color: silver;
+    padding:2px;
 }
 
 .content {
-    /* Cambia el ancho para que haya espacio para varios divs */
     background-color: black;
-  /*  margin: 10px; /* Espacio entre los divs */
-    margin:5%;
-    height: 30%; /* Asegúrate de que ocupen la altura del contenedor */
+    margin: 10px 0 0 0;
 }
 
+.add_user{
+    height:10%;
+}
+
+.list-check{
+    height: 72%;
+}
+
+form{
+    display: flex;
+    padding:10px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
+
+.chart-bar{
+    height: 8%;
+}
+
+[type="submit"]{
+    flex-basis:10%;
+    position:absolute;
+    bottom:-30px;
+    right:20px;
+}
+
+[type="text"]{
+    flex-basis:45%;
+    align-self:flex-start;
+    margin-right: 20%;
+}
+
+[type="color"]{
+    flex-basis:20%;
+    align-self: flex-end;
+   
+    -webkit-appearance: none; /* Elimina el estilo por defecto en algunos navegadores */
+    width: 50px; /* Ajusta el ancho del círculo */
+    height: 50px; /* Ajusta la altura del círculo */
+    border-radius: 50%;
+    }
+
 footer {
-    display: flex; /* Corregido el error de escritura */
     background-color: yellow;
     text-align: center;
-    justify-content: center;
-    margin-top: 40px;
-    align-items: flex-end; /* Alinea el contenido al final del eje cruzado */
+    margin-top: 20px;
+    
 }
